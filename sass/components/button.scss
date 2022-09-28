@@ -1,0 +1,98 @@
+
+.btn{
+    &, &:link, &:visited{
+
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 5rem;
+        transition: all .2s;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.588);
+        position: relative;
+        font-size: $default-font-size;
+        //button
+        border: none;
+        cursor: pointer;
+    }
+
+    &-white{
+        background-color: white;
+        color: gray;
+    }
+
+    &-purple{
+        background-color: rgba(87, 19, 92, 0.8);
+        color: rgb(255, 255, 255);
+    }
+        
+    &:hover{
+        transform: translatey(-.5rem);
+        
+        &::after{
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    &:active{
+        transform: translatey(-.2rem);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.588);
+    }
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 10rem;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .5s;
+    }
+
+    &-white::after{
+        background-color: rgb(255, 255, 255);
+    }
+
+    &-purple::after{
+        background-color: rgba(87, 19, 92, 0.8);
+    }
+
+
+
+    &-animation{
+        
+        animation: moveInBottom 1s ease-out ;
+    }
+}
+
+
+.btn-text{
+    &:link,&:visited{
+        
+        font-size: $default-font-size;
+        color:rgba(87, 19, 92, 0.8);
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(87, 19, 92, 0.8);
+        padding: 10px 20px;
+        transition: all .2s;
+    }
+
+    &:hover{
+        background-color:rgba(87, 19, 92, 0.8);
+        color: white;
+        padding: 10px 20px;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.588);
+        transform: translatey(-2px);
+    }
+
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.588);
+        transform: translatey(0px);
+    }
+}

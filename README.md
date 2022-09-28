@@ -1,0 +1,1 @@
+A personal project using HTML and SASS, it was the first project for the "ADVANCED CSS AND SASS: FLEXBOX, GRID, ANIMATIONS AND MORE" course i have taken on Udemy. and because it's personal i used a filler text(Lorem Ipsum) instead of real words but i made sure to chooe a suitable layout and colors.
